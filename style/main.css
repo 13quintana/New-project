@@ -1,0 +1,246 @@
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+
+strong {
+    color: #FCC661;
+}
+
+/*--------------------------- Primera imagen ----------------------*/
+.first {
+    background-image: url("../assets/ivan-torres-MQUqbmszGGM-unsplash.jpg");
+    background-color: transparent;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    background-position: center;
+    border-bottom-width: 1px;
+    border-color: #FCC661;
+    border-bottom-style: solid;
+    border-top-width: 1px;
+    border-top-style: solid;
+    margin: 0px -7px;
+
+}
+
+.grande {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.pcenter {
+    text-align: center;
+    margin-top: -30px;
+
+}
+
+/*------------------------------ CONTENIDO -TEXTO ---------------------------------*/
+.second {
+    margin: 0px -7px;
+
+}
+
+.todo {
+    height: 500px;
+    width: 1347px;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+h1 {
+    color: #FCC661;
+    text-indent: 60px;
+    font-size: 30px;
+    margin-top: 60px;
+}
+
+p {
+    color: white;
+    font-size: 25px;
+    margin: 60px;
+    margin-bottom: 80px;
+}
+
+.contenido {
+    width: 660px;
+    height: 500px;
+    float: left;
+}
+
+.contenido2 {
+    width: 660px;
+    height: 500px;
+    float: right;
+
+}
+
+/*--------------------------------- BOTONES -------------------------------*/
+
+/* Normal y general para todos los botenes */
+buttom {
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-width: 1px;
+    border-color: #FCC661;
+    border-style: solid;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    margin-left: 60px;
+
+}
+
+/*Cuando pasas por encima del boton*/
+buttom:hover {
+    background-color: black;
+    color: #FCC661;
+}
+
+/*Botones de arriba reservar mesa y pedio online*/
+.btn_pedido {
+    margin-top: 700px;
+    margin-left: 310px;
+    background-color: rgba(0, 0, 0, 0.562);
+}
+
+/*Boton de abajo locales*/
+.btn_local {
+    align-self: center;
+    margin-left: 550px;
+    margin-top: 150px;
+    background-color: rgba(0, 0, 0, 0.562);
+}
+/* el botón que flota*/
+.flotante {
+    display: scroll;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.616);
+    z-index: 999;
+}    
+
+/*----------------------------------------- FOTOS ----------------------------------------------------*/
+.foto {
+    background-image: url("../assets/vista-superior-pizza-pepperoni-salchichas-salsa-tomate-queso-chispas-hierbas.jpg");
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    background-position: center;
+}
+
+.foto2 {
+    background-image: url("../assets/2pizzahorno.jpg");
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    height: 499px;
+    width: 660px;
+    position: relative;
+    background-position: center;
+
+}
+
+.foto3 {
+    background-image: url("../assets/localinterior.jpg");
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    height: 499px;
+    width: 687px;
+    position: relative;
+    background-position: center;
+
+}
+
+.foto4 {
+    background-image: url("../assets/2pizzahorno.jpg");
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    height: 499px;
+    width: 660px;
+    position: relative;
+    background-position: center;
+
+}
+
+/*--------------------------------- ULTIMA IMAGEN ----------------------------*/
+
+.last {
+    background-image: url("../assets/localinterior.jpg");
+    background-color: transparent;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    background-position: center;
+    border-bottom-width: 1px;
+    border-color: #FCC661;
+    border-bottom-style: solid;
+    border-top-width: 1px;
+    border-top-style: solid;
+    margin: 0px -7px;
+
+}
+
+/* a partir de aqui el CSS de las animaciones */
+
+@keyframes anim-h {
+    from {
+        font-size: 40px;
+    }
+
+    to {
+        font-size: 30px
+    }
+
+}
+
+
+.anim-h {
+    animation-duration: 2s;
+    /* la animacion dura X segundos */
+    animation-delay: 0.5s;
+    /* esperamos X segundos antes de hacer la animacion */
+
+}
+
+.anim-h {
+    animation-name: anim-h;
+}
+
+
+/* todas las animaciones pausadas */
+.paused * {
+    animation-play-state: paused;
+}
