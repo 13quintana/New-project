@@ -17,8 +17,3 @@ window.addEventListener('DOMContentLoaded', (ev0) => {
 	});
 });
 
-
-const boton = document.createElement("button");
-boton.innerHTML = "Click aquí";
-boton.style = "bottom:10px;right:10px;position:fixed;z-index:9999;"
-document.body.appendChild(boton);
