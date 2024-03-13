@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Nourd';
+   src: url('/New-project/style/fonts/nourd_regular.ttf') format('truetype');
+}
+   
+  .grip-container {
+    display: flex;
+    margin-top:20px;
+    flex-wrap: wrap;
+    gap: 20px;
+   
+  }
+
+  
+  #product-img {
+    width: 295px;
+    height: 200px;
+  }
+
+  .product-container {
+    overflow: hidden; /* Asegura que el desbordamiento no muestre partes adicionales de la imagen */
+    position: relative; /* Establece la posición relativa para que la imagen absoluta esté en relación con este contenedor */
+    width: 265px; /* Ajusta según sea necesario */
+    height: 325px; /* Ajusta según sea necesario */
+    
+  }
+
+  .product-img{
+      width: 100%; /* La imagen se ajusta al 100% del ancho del contenedor */
+      height: auto; /* Mantiene la proporción original de la imagen */
+      transition: transform 0.3s; /* Agrega una transición para suavizar el efecto */
+    
+  }
+  .product-container:hover  #product-img{
+    transform: scale(1.05);
+}
+
+#product-title{
+  font-weight: bold;
+}
+
+.product-container p {
+  margin-bottom: -10px;
+}
+
+#product-ingredients {
+  height: 40px;
+}
