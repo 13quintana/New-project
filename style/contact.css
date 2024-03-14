@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Nourd';
+   src: url('/New-project/style/fonts/nourd_regular.ttf') format('truetype');
+}
+.formulario {
+    max-width: 1080px;
+    font-family: 'Nourd', sans-serif;
+  
+  }
+
+  .campo {
+    margin-bottom: 10px;
+  }
+
+  .campo label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .campo input,
+  .campo select,
+  .campo textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+
+  .boton {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .otras a {
+       text-decoration: none;
+       color: inherit;
+       
+  }   
+.otras {
+    margin-right: 30px;
+}
+
+  .bodycentral {
+    margin: 3% 20%;
+    font-family: 'Nourd', sans-serif;
+    
+  }
+ 
+  .bigtitle {
+    color: #FCC661;
+    border-bottom: 2px solid #FCC661;
+    border-top:none;
+    border-left: none;
+    border-right: none;
+    font-size: 30px;
+
+  }
+
+  .container {
+    display: flex;
+   
+  }

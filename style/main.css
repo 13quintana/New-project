@@ -1,9 +1,10 @@
 
 /* css de el Header y el footer */
 @font-face {
-    font-family: 'nourd';
-   src: url("/style/nourd-font/") format('truetype');
+    font-family: 'Nourd';
+   src: url("/style/fonts/nourd_light.ttf") format('truetype');
 }
+
 
 /*HEADER*/
 

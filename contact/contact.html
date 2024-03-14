@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/New-project/" />
+    <script src="./index.js"></script>
+    <title></title>
+    <style>
+        /* Estilos CSS para alinear los campos del formulario */
+        .formulario {
+          max-width: 400px;
+          font-family: 'Nourd', sans-serif;
+        
+        }
+    
+        .campo {
+          margin-bottom: 10px;
+        }
+    
+        .campo label {
+          display: block;
+          margin-bottom: 5px;
+        }
+    
+        .campo input,
+        .campo select,
+        .campo textarea {
+          width: 100%;
+          padding: 8px;
+          box-sizing: border-box;
+        }
+    
+        .boton {
+          background-color: #4caf50;
+          color: white;
+          padding: 10px 15px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        .otras a {
+             text-decoration: none;
+             color: inherit;
+        }   
+        @font-face {
+         font-family: 'Nourd';
+        src: url('/style/fonts/nourd_light.ttf') format('truetype');
+        
+        }
+      </style>
+</head>
+
+<body>
+    Si deseas ponerte en contacto con nosotros puedes rellenar el siguiente formulario, recuerda aportar tu email para
+    que podamos responderte.<br><br>
+
+    <form>
+        Contáctanos<br>
+        <!-- <table>
+            <tr>
+                <td><label>Nombre</td>
+                <td><input type="text" id="fname"></label></td>
+            <tr>
+                <td><label>Email</td><td><input type="text" id="femail"></label></td>
+            </tr>    
+            <tr>
+                <td><label>Teléfono</td><td><input type="text" id="pnumber"></label></td>
+            </tr>
+            <tr>
+                <td><label>Texto</td><td><input type="textarea" id="pnumber"></label></td>
+            </tr>
+            <tr>
+                <td><label><input type="checkbox" value="fagree"> Acepto <a href="#">Política Privacidad</a></label></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Enviar" value="fsubmit"></td>
+            </tr>
+    </table>
+    -->
+        <div class="formulario">
+            <div class="campo">
+                <label>Nombre</label> <input type="text" id="fname" name="fname">
+            </div>
+            <div class="campo">
+                <label>Email</label> <input type="email" id="femail" name="femail">
+            </div>
+            <div class="campo">
+                <label>Teléfono</label> <input type="text" id="fnumber" name="fnumber">
+            </div>
+            <div class="campo">
+                <label>Mensaje</label> <textarea type="textarea" id="ftexto" rows="4"></textarea>
+            </div>
+            <div >
+                <input type="checkbox" value="fagree" name="privacity"><label>Acepto <a href="#">Política Privacidad</a></label><br><br>
+            </div>
+            <div class="campo">
+                <input type="submit" value="Enviar" value="fsubmit" class="boton">
+            </div>
+
+        </div>
+
+
+    </form>
+
+
+    <br><br>
+    <div class="otras">
+        Otras formas de contactarnos<br>
+        Teléfono: <a href="tel:+34666555444">666555444</a><br>
+        Whatsapp:<a href="https://wa.me/34666555444">666555444</a><br>
+        Email: <a href="mailto:info@rebootpizza.com">info@rebootpizza.com</a><br>
+    </div>
+    <br>
+    <div>
+        Nos podrás encontrar en la Calle Luis Morote 15, Las Palmas de GC.<br><br>
+        <div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3518.171259684151!2d-15.434796424119831!3d28.141274206218853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc40953fa4513c6b%3A0x9d75a486c3e4cb14!2sC.%20Luis%20Morote%2C%2015%2C%2035007%20Las%20Palmas%20de%20Gran%20Canaria%2C%20Las%20Palmas!5e0!3m2!1ses!2ses!4v1709924796801!5m2!1ses!2ses"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</body>
+
+</html>
