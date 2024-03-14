@@ -14,7 +14,7 @@
     background-color: black;
     top: 0;
     width: 100%;
-    z-index: 99999;
+    z-index: 998;
    }
    .cuerpo-header{
     background-color: black;
@@ -108,6 +108,7 @@ strong {
 .pcenter {
     text-align: center;
     margin-top: -30px;
+    color: white;
 
 }
 
@@ -175,6 +176,7 @@ buttom {
 buttom:hover {
     background-color: black;
     color: #FCC661;
+    text-decoration: none;
 }
 
 /*Botones de arriba reservar mesa y pedio online*/
@@ -191,6 +193,23 @@ buttom:hover {
     margin-top: 150px;
     background-color: rgba(0, 0, 0, 0.562);
 }
+
+
+.btn_saber a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn_pedido a {
+    color: white;
+    text-decoration: none;
+}
+
+.flotante a {
+    color: white;
+    text-decoration: none; 
+}
+
 /* el botón que flota*/
 .flotante {
     display: scroll;

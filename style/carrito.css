@@ -1,0 +1,39 @@
+.cart-sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .cart-sidebar-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .cart-sidebar-content .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+    cursor: pointer;
+  }
+  
+  .cart-sidebar-content h2 {
+    margin-bottom: 20px;
+  }
+  
+  .cart-sidebar-content p {
+    margin: 10px 0;
+  }
+  
+  .cart-sidebar-content hr {
+    width: 100%;
+  }
