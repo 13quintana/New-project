@@ -68,9 +68,11 @@ html {
 }
 
 body {
+    background-color: white;
+}
+.fondo-negro {
     background-color: black;
 }
-
 
 strong {
     color: #FCC661;
@@ -130,12 +132,14 @@ h1 {
     margin-top: 60px;
 }
 
-p {
+.letra-blanca {
     color: white;
     font-size: 25px;
     margin: 60px;
     margin-bottom: 80px;
 }
+
+
 
 .contenido {
     width: 660px;
@@ -208,6 +212,7 @@ buttom:hover {
     align-items: center;
     background-size: cover;
     height: 500px;
+    width: 660px;
     position: relative;
     background-position: center;
 }
@@ -364,7 +369,7 @@ footer{
     color:#FCC661;
     padding-left: 6px;
 }
-
+/*
 @media (max-with:991px) {
     footer{
         text-align: center;
@@ -373,6 +378,6 @@ footer{
         width: 100%;
         margin-bottom: 30px;
     }
-}
+}*/
 
 
