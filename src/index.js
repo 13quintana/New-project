@@ -36,6 +36,7 @@ function addToCart(productKey) {
     const sidebarCartCount = document.getElementById('sidebar-cart-count');
     const sidebarCartTotal = document.getElementById('sidebar-cart-total');
     const cartItems = document.getElementById('cart-items');
+    
 
     // Añade el producto al carrito
     const product = productos[productKey];
@@ -57,6 +58,7 @@ function addToCart(productKey) {
       <div class="cart-item" data-key="${productKey}">
         <p>${product.nombre} <span class="quantity">1</span></p>
         <p class="price">${product.precio.toFixed(2)}€</p>
+        <button class="remove-item" onclick="removeFromCart('${productKey}')">x</button>
       </div>`;
         cartItems.innerHTML += itemHTML;
     }
@@ -75,6 +77,41 @@ function addToCart(productKey) {
     sidebarCartTotal.innerText = currentTotal.toFixed(2) + '€';
 }
 
+//elimina un producto del carrito
+function removeFromCart(productKey) {
+    const cartItem = document.querySelector(`#cart-items .cart-item[data-key="${productKey}"]`);
+    if (cartItem) {
+        const cartCount = document.getElementById('counter');
+        const cartTotal = document.getElementById('total-price');
+        const sidebarCartCount = document.getElementById('sidebar-cart-count');
+        const sidebarCartTotal = document.getElementById('sidebar-cart-total');
+
+        // Obtener la cantidad y el precio del producto que se va a eliminar
+        const quantity = parseInt(cartItem.querySelector('.quantity').innerText);
+        const price = parseFloat(cartItem.querySelector('.price').innerText.replace('€', '').replace(',', '.'));
+
+        // Actualizar el contador y el precio total del carrito
+        const currentCount = parseInt(cartCount.innerText);
+        const newCount = currentCount - 1
+        cartCount.innerText = newCount;
+
+        const currentTotal = parseFloat(cartTotal.innerText.replace('€', '').replace(',', '.'));
+        const newTotal = currentTotal - price;
+        cartTotal.innerText = newTotal.toFixed(2) + '€';
+
+        // Actualizar el contador y el precio total en el desplegable lateral
+        sidebarCartCount.innerText = newCount;
+        sidebarCartTotal.innerText = newTotal.toFixed(2) + '€';
+
+        // Si hay más de un producto del mismo tipo en el carrito, solo disminuir la cantidad en uno
+        if (quantity > 1) {
+            cartItem.querySelector('.quantity').innerText = quantity - 1;
+        } else {
+            // Si solo hay un producto del tipo, eliminar el elemento del carrito del DOM
+            cartItem.remove();
+        }
+    }
+}
 
 
 

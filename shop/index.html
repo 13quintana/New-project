@@ -33,7 +33,8 @@
                     <div class="cart-sidebar-content">
                       <span class="close-btn" onclick="closeCart()">×</span>
                       <h2 onclick="openCart()">Carrito de Compra</h2>
-                      <div id="cart-items"></div>
+                      <div id="cart-items">
+                      </div>
                       <hr>
                       <p>Total de productos: <span id="sidebar-cart-count">0</span></p>
                       <p>Total: <span id="sidebar-cart-total">0,00€</span></p>
@@ -41,7 +42,7 @@
                   </div>
           
                   <div style="display: flex; align-items: center; height: 300px;">
-                    <p onclick="openCart()" style="margin: 0;">carrito</p> &nbsp;
+                    <p onclick="openCart()" class="cart-button"></p> &nbsp;
                     <p id="counter">0</p> &nbsp;
                     <p id="total-price" style="display: flex;">0,00€</p>
                   </div>

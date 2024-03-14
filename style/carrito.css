@@ -1,39 +1,82 @@
 .cart-sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    right: 0;
-    background-color: white;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.cart-sidebar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.cart-sidebar-content .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.cart-sidebar-content h2 {
+  margin-bottom: 20px;
+}
+
+.cart-sidebar-content p {
+  margin: 10px 0;
+}
+
+.cart-sidebar-content hr {
+  width: 100%;
+}
+
+/* Estilo para el botón del carrito de la compra */
+.cart-button {
+  /*background-color: #5AC4BE;*/
+  background-image: url('/assets/icone-de-panier-jaune.png'); /* Establecer la imagen de fondo */
+  background-size: contain; /* Ajustar el tamaño de la imagen para que se ajuste dentro del botón */
+  background-repeat: no-repeat; /* Evitar que la imagen se repita */
+  background-position: center; /* Centrar la imagen dentro del botón */
+  width: 30px; /* Ancho del botón */
+  height: 30px; /* Altura del botón */
+  border: none; /* Sin borde */
+  padding: 0; /* Sin espacio interno */
+  cursor: pointer; /* Cambiar el cursor al pasar el ratón */
+
+  margin-top: -170px;
+  margin-right: 20px;
   
-  .cart-sidebar-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  .cart-sidebar-content .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    font-size: 36px;
-    cursor: pointer;
-  }
-  
-  .cart-sidebar-content h2 {
-    margin-bottom: 20px;
-  }
-  
-  .cart-sidebar-content p {
-    margin: 10px 0;
-  }
-  
-  .cart-sidebar-content hr {
-    width: 100%;
-  }
+}
+
+
+#counter {
+  position: absolute;
+  top: -5px;
+  right: 10px;
+  background-color: #2b4102;
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 12px;
+  top: 43px;
+}
+
+/* Estilo para el precio total en el botón */
+#total-price {
+  position: absolute;
+  right: 10px;
+  background-color: green;
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 12px;
+  top: 75px;
+}
